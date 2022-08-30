@@ -4,7 +4,7 @@ from .models import Todo
 # Create your views here.
 
 def home(request):
-    todo = Todo.objects.all()
+    todos = Todo.objects.all()
     context = {
         "todos" : todos
     }
